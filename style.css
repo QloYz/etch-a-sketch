@@ -1,0 +1,82 @@
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 8px solid rgb(216, 189, 166);   /* thickness, style, color */
+  border-radius: 8px;        /* optional: rounded corners */
+  padding: 10px;             /* optional: space inside the border */
+
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center;  /* centers horizontally */
+  height: 100vh;            /* full viewport height */
+  margin: 0;
+  background-image: url(./images/background2.jpg);
+  background-size: cover;
+}
+
+#title {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 253, 253)
+}
+
+#red {
+  height: 20px;
+  width: 20px;
+  background-color: red
+}
+
+#blue {
+  height: 20px;
+  width: 20px;
+  background-color: blue
+}
+
+#green {
+  height: 20px;
+  width: 20px;
+  background-color: green
+}
+
+#purple {
+  height: 20px;
+  width: 20px;
+  background-color: purple
+}
+
+#yellow {
+  height: 20px;
+  width: 20px;
+  background-color: yellow
+}
+
+#erase {
+  height: 20px;
+  width: 20px;
+  background-image: url(./images/eraser2.jpg);
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+#clear {
+  height: 20px;
+  width: 20px;
+  background-image: url(./images/bucket.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box {
+  box-sizing: border-box;
+}
