@@ -82,16 +82,16 @@ body {
 }
 
 #small {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   background-image: url(./images/pencil.jpg);
   background-size: cover;
   cursor: pointer;
 }
 
 #medium {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   background-color: black
 }
 
