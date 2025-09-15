@@ -8,18 +8,20 @@ const eraseButton = document.querySelector("#erase")
 const clearButton = document.querySelector("#clear")
 const smallButton = document.querySelector("#small")
 
-const size = 16;
+
 let isDrawing = false;
 let brushColor = "black";
 
 
-function makeGrid(squareSize) {
+function makeGrid(size) {
   container.innerHTML = "";
 
-  const cols = container.clientWidth / squareSize;
-  const rows = container.clientHeight / squareSize;
+  const squareSize = Math.floor(container.clientWidth / size);
+  const totalGridWidth = squareSize * size;
+  container.style.width = `${totalGridWidth}px`;
+  container.style.height = `${totalGridWidth}px`;
 
-  for (let i = 0; i < cols * rows; i++) {
+  for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
     square.classList.add("box");
     square.style.width = `${squareSize}px`;
