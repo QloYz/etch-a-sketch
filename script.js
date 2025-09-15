@@ -64,9 +64,10 @@ clearButton.addEventListener("click", () => {
   });
 });
 
-container.addEventListener("mousdown", (e) => {
+container.addEventListener("mousedown", (e) => {
     if (e.target.classList.contains("box")) {
-        isDrawing = !isDrawing;
+        isDrawing = true;
+        e.target.style.backgroundColor = brushColor
     }
 })
 
