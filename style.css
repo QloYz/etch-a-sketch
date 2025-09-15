@@ -80,3 +80,21 @@ body {
 .box {
   box-sizing: border-box;
 }
+
+#small {
+  height: 10px;
+  width: 10px;
+  background-color:black
+}
+
+#medium {
+  height: 20px;
+  width: 20px;
+  background-color: black
+}
+
+#large {
+  height: 30px;
+  width: 30px;
+  background-color: black
+}

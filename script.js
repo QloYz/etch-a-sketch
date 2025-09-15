@@ -6,8 +6,7 @@ const purpleButton = document.querySelector("#purple")
 const yellowButton = document.querySelector("#yellow")
 const eraseButton = document.querySelector("#erase")
 const clearButton = document.querySelector("#clear")
-const slider = document.getElementById("slider")
-const sizeValue = document.getElementById("sliderValue")
+
 const size = 16;
 let isDrawing = false;
 let brushColor = "black";
