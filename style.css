@@ -88,13 +88,13 @@ body {
 }
 
 #medium {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: black
 }
 
 #large {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-color: black
 }
