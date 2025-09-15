@@ -64,7 +64,7 @@ clearButton.addEventListener("click", () => {
   });
 });
 
-container.addEventListener("click", (e) => {
+container.addEventListener("mousdown", (e) => {
     if (e.target.classList.contains("box")) {
         isDrawing = !isDrawing;
     }
