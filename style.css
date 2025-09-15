@@ -100,5 +100,6 @@ body {
 }
 
 .brushSizes {
-  background-color: rgb(216, 189, 166); 
+  background-color: rgb(216, 189, 166);
+  width: 300px;
 }
