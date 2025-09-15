@@ -33,10 +33,6 @@ function makeGrid(squareSize) {
   }
 }
 
-smallButton.addEventListener('click', () => {
-    makeGrid(15);
-})
-
 redButton.addEventListener('click', () => {
     brushColor = "red"
 })
