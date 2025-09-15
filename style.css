@@ -8,7 +8,7 @@
   background-color: white;
   border: 8px solid rgb(216, 189, 166);   /* thickness, style, color */
   border-radius: 8px;        /* optional: rounded corners */
-  padding: 10px;             /* optional: space inside the border */
+             /* optional: space inside the border */
 
 }
 
