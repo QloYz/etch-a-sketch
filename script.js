@@ -70,7 +70,11 @@ container.addEventListener("mousdown", (e) => {
     }
 })
 
-container.addEventListener("mouseover", (e) => {
+container.addEventListener("mouseup", () => {
+  isDrawing = false;
+});
+
+container.addEventListener("mousemove", (e) => {
     if (isDrawing && (e.target.classList.contains("box"))) {
         e.target.style.backgroundColor = brushColor
     }
