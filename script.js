@@ -14,6 +14,9 @@ function makeGrid(size) {
   container.innerHTML = "";
 
   const squareSize = Math.floor(container.clientWidth / size);
+  const totalGridWidth = squareSize * size;
+  container.style.width = `${totalGridWidth}px`;
+  container.style.height = `${totalGridWidth}px`;
 
   for (let i = 0; i < size * size; i++) {
     const square = document.createElement("div");
