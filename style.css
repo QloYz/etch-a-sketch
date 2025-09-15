@@ -93,7 +93,7 @@ body {
   height: 20px;
   width: 20px;
   background-image: url(./images/marker.jpg);
-  
+  background-size: cover;
   cursor: pointer;
 }
 
