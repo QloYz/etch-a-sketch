@@ -25,7 +25,7 @@ function makeGrid(size) {
 }
 
 smallButton.addEventListener('click', () => {
-  makeGrid(32)
+  makeGrid(8)
 })
 
 redButton.addEventListener('click', () => {
