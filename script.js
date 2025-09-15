@@ -12,11 +12,6 @@ const size = 16;
 let isDrawing = false;
 let brushColor = "black";
 
-for (let i = 0; i < size * size; i++) {
-    const square = document.createElement("div")
-    square.classList.add("box")
-    container.appendChild(square)
-}
 
 function makeGrid(squareSize) {
   container.innerHTML = "";
@@ -100,7 +95,7 @@ function titleRainbow() {
 }
 
 titleRainbow();
-
+makeGrid(16);
 
 
 
