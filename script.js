@@ -14,7 +14,11 @@ const INITIAL_SIZE = 16;
 makeNewGrid(INITIAL_SIZE);
 
 function clearGrid() {
-    container.replaceChildren();
+    const newDivs = document.querySelectorAll('.box');
+
+    newDivs.forEach(element => {
+        container.removeChild(element);
+    })
 }
 
 function makeNewGrid(size) {
