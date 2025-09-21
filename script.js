@@ -9,7 +9,7 @@ const clearButton = document.querySelector("#clear")
 const slider = document.querySelector(".grid-slider");
 let isDrawing = false;
 let brushColor = "black";
-const INITIAL_SIZE = 32;
+const INITIAL_SIZE = 16;
 
 makeNewGrid(INITIAL_SIZE);
 
