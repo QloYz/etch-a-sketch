@@ -109,28 +109,29 @@ body {
   background-color: rgb(216, 189, 166);
 }
 
-input[type="range"] {
-  -webkit-appearance: none;
-  width: 200px;
-  height: 8px;
-  background: #ddd;
-  border-radius: 5px;
-  outline: none;
+.container.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  border-radius: 50%;
-  cursor: pointer;
+.size{
+    background-color: rgb(220, 221, 207);
 }
-
-input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #4CAF50;
-  border-radius: 50%;
-  cursor: pointer;
+.size.small{
+    width: 4px;
+    height: 4px;
+}
+.size.medium{
+    width: 6px;
+    height: 6px;
+}
+.size.large{
+    width: 8px;
+    height: 8px;
+}
+.size.xlarge{
+    width: 10px;
+    height: 10px;
 }
