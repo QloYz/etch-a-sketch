@@ -6,7 +6,6 @@ const purpleButton = document.querySelector("#purple")
 const yellowButton = document.querySelector("#yellow")
 const eraseButton = document.querySelector("#erase")
 const clearButton = document.querySelector("#clear")
-const smallButton = document.querySelector("#small")
 let isDrawing = false;
 let brushColor = "black";
 
@@ -26,10 +25,6 @@ function makeGrid(size) {
     container.appendChild(square);
   }
 }
-
-smallButton.addEventListener('click', () => {
-  makeGrid(8)
-})
 
 redButton.addEventListener('click', () => {
     brushColor = "red"

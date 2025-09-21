@@ -81,30 +81,6 @@ body {
   box-sizing: border-box;
 }
 
-#small {
-  height: 20px;
-  width: 20px;
-  background-image: url(./images/pencil.jpg);
-  background-size: cover;
-  cursor: pointer;
-}
-
-#medium {
-  height: 20px;
-  width: 20px;
-  background-image: url(./images/marker.jpg);
-  background-size: cover;
-  cursor: pointer;
-}
-
-#large {
-  height: 20px;
-  width: 20px;
-  background-image: url(./images/brush.jpg);
-  background-size: color;
-  cursor: pointer;
-}
-
 .brushSizes {
   background-color: rgb(216, 189, 166);
 }
