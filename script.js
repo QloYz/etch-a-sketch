@@ -8,22 +8,46 @@ const eraseButton = document.querySelector("#erase")
 const clearButton = document.querySelector("#clear")
 let isDrawing = false;
 let brushColor = "black";
+const INITIAL_SIZE = 16;
 
-function makeGrid(size) {
-  container.innerHTML = "";
+makeNewGrid(INITIAL_SIZE);
 
-  const squareSize = Math.floor(container.clientWidth / size);
-  const totalGridWidth = squareSize * size;
-  container.style.width = `${totalGridWidth}px`;
-  container.style.height = `${totalGridWidth}px`;
+function clearGrid() {
+    container.replaceChildren();
+}
 
-  for (let i = 0; i < size * size; i++) {
-    const square = document.createElement("div");
-    square.classList.add("box");
-    square.style.width = `${squareSize}px`;
-    square.style.height = `${squareSize}px`;
-    container.appendChild(square);
-  }
+function makeNewGrid(size) {
+    clearGrid();
+    let numberOfBoxes = size * size;
+    for (let i = 0; i < numberOfBoxes; i++){
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('box');
+        container.appendChild(newDiv);
+    }
+    let newHeight = newWidth = 512 / size ;
+    console.log(newHeight);
+    const newDivs = document.querySelectorAll('.box');
+    newDivs.forEach(element => {
+        element.style.height = newHeight.toString() + "px";
+        element.style.width = newWidth.toString() + "px";
+      
+    })
+
+};
+
+function changeGridSize(size){
+    switch(size){
+        case '1': gridSize = 64;
+        break;
+        case '2': gridSize = 32;
+        break;
+        case '3': gridSize = 16;
+        break;
+        case '4': gridSize = 8;
+        break;
+        default: gridSize = 8;
+    }
+  makeNewGrid(gridSize);
 }
 
 redButton.addEventListener('click', () => {
@@ -93,7 +117,6 @@ function titleRainbow() {
 }
 
 titleRainbow();
-makeGrid(16);
 
 
 
