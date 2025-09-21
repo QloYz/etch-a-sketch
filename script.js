@@ -6,6 +6,7 @@ const purpleButton = document.querySelector("#purple")
 const yellowButton = document.querySelector("#yellow")
 const eraseButton = document.querySelector("#erase")
 const clearButton = document.querySelector("#clear")
+const slider = document.querySelector(".grid-slider");
 let isDrawing = false;
 let brushColor = "black";
 const INITIAL_SIZE = 16;
@@ -49,6 +50,11 @@ function changeGridSize(size){
     }
   makeNewGrid(gridSize);
 }
+
+slider.addEventListener("input", () => {
+    let value = slider.value;
+    changeGridSize(value);
+})
 
 redButton.addEventListener('click', () => {
     brushColor = "red"
